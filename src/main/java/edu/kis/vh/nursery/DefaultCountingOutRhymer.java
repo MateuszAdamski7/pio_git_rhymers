@@ -14,7 +14,7 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean callCheck() {
-			return total == -1;
+			return total == TOTAL_START;
 		}
 		
 	public boolean isFull() {
@@ -23,13 +23,13 @@ public class DefaultCountingOutRhymer {
 		
 	protected int callPeekaboo() {
 		if (callCheck())
-			return -1;
+			return TOTAL_START;
 		return numbers[total];
 	}
 			
 	public int countOut() {
 		if (callCheck())
-			return -1;
+			return TOTAL_START;
 		return numbers[total--];
 	}
 
