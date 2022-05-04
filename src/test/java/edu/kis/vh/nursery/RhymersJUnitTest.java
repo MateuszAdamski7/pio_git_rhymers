@@ -26,7 +26,7 @@ public class RhymersJUnitTest {
 		boolean result = rhymer.callCheck();
 		Assert.assertEquals(true, result);
 
-		rhymer.countIn(888);
+		rhymer.countIn(FULL_STACK_VALUE);
 
 		result = rhymer.callCheck();
 		Assert.assertEquals(false, result);
@@ -54,7 +54,7 @@ public class RhymersJUnitTest {
 		int result = rhymer.callPeekaboo();
 		Assert.assertEquals(EMPTY_STACK_VALUE, result);
 
-		int testValue = 4;
+		int testValue = TEST_VALUE;
 		rhymer.countIn(testValue);
 
 		result = rhymer.callPeekaboo();
